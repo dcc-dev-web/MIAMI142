@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*========== Home ==========*/
+
+.terminos-main {
+    position: relative;
+    width: 99.2vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/banner-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminos-main:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.6);
+    z-index: 1;
+}
+
+.terminos-main .content-terminos {
+    position: relative;
+    z-index: 2;
+    color: #ebebeb;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.terminos-main .content-terminos h1 {
+    font-size: 6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 90px;
+    margin: 0;
+}
+
+/*========== TEXT ==========*/
+
+.container-text {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem 3rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title-text {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #C6E724;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.container-text h2 {
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    color: #444;
+    border-left: 5px solid #C6E724;
+    padding-left: 10px;
+}
+
+.container-text p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: justify;
+    color: #555;
+}
+
+/* Pequeño efecto hover en h2 */
+h2:hover {
+    color: #000;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}

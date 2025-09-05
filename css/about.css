@@ -1,0 +1,143 @@
+/*========== About ==========*/
+
+.nosotros-main {
+    position: relative;
+    width: 99.2vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/banner-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-main:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.6);
+    z-index: 1;
+}
+
+.nosotros-main .content-nosotros {
+    position: relative;
+    z-index: 2;
+    color: #ebebeb;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.nosotros-main .content-nosotros h1 {
+    font-size: 6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 90px;
+    margin: 0;
+}
+
+/*========== HISTORIA ==========*/
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+
+.historia img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.historia-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    text-align: justify;
+}
+
+.historia-text h2 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/*========== MISION, VISION Y LEMA ==========*/
+.nosotros-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+}
+
+.card {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: #C6E724;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #C6E724;
+    color: #2b2b2b;
+}
+
+.card:hover h2,
+.card:hover p {
+    color: #2b2b2b;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .historia-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .historia img {
+        width: 50%;
+    }
+
+    .historia-text {
+        width: 50%;
+    }
+
+    .nosotros-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

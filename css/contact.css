@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*========== Home ==========*/
+
+.contactanos-main {
+    position: relative;
+    width: 99.2vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/banner-5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanos-main:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.6);
+    z-index: 1;
+}
+
+.contactanos-main .content-contactanos {
+    position: relative;
+    z-index: 2;
+    color: #ebebeb;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.contactanos-main .content-contactanos h1 {
+    font-size: 6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 90px;
+    margin: 0;
+}

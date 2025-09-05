@@ -37,13 +37,19 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .wrapper .footer-widget {
-    width: calc(20% - 30px);
+    width: calc(25% - 30px);
     margin: 0 15px 50px;
-    padding: 0 30px;
+    padding: 0 25px;
 }
 
 .wrapper .footer-widget:nth-child(1) {
@@ -61,7 +67,10 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: #ebebeb;
+    text-align: justify;
 }
+
+/*========== Logo / Icons ==========*/
 
 .wrapper .footer-widget .socials {
     display: flex;
@@ -108,13 +117,17 @@ footer {
     color: #ebebeb;
     font-size: 16px;
     text-decoration: none;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     line-height: 32px;
     transition: all 0.3s ease-out;
 }
 
 .wrapper .footer-widget .links li a:hover {
     color: #C6E724;
+}
+
+.footer-links {
+    padding: 0 70px;
 }
 
 .copyright-wrapper {

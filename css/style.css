@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 
 /*========== Header ==========*/
@@ -19,11 +20,14 @@ header.solido nav{
     background: #2b2b2b;
 }
 
-
-
+/*========== JS Icons ==========*/
 .media-icons i {
     transition: opacity 0.3s ease;
     opacity: 1;
+}
+
+.media-icons.oculto a {
+    pointer-events: none;
 }
 
 .media-icons.oculto i {
@@ -92,7 +96,7 @@ header .nav-options .nav-items a:hover:before {
     width: 100%;
 }
 
-/*========== Section Home ==========*/
+/*========== Home ==========*/
 section {
     padding: 100px 200px;
 }
@@ -121,7 +125,7 @@ section {
 .home .content {
     z-index: 888;
     color: #ebebeb;
-    width: 80%;
+    width: 60%;
     margin-top: 50px;
 }
 
@@ -144,18 +148,30 @@ section {
 .home .content p {
     margin-bottom: 65px;
     font-size: 1.2em;
+    text-align: justify;
+    word-spacing: 2px;
 }
 
-.home .content a {
-    background: #383838;
+.home .content a,
+.about .about-content a {
+    background: #2b2b2b;
     padding: 15px 35px;
     color: #C6E724;
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
+.home .content a:hover,
+.about .about-content a:hover {
+    background: #C6E724;
+    color: #2b2b2b;
+}
+
+/*========== Icons ==========*/
 .home .media-icons {
     z-index: 888;
     position: fixed;
@@ -167,16 +183,16 @@ section {
 
 .home .media-icons a {
     color: #fff;
-    font-size: 1.8em;
+    font-size: 2em;
     transition: 0.3s ease;
 }
 
 .home .media-icons a:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .home .media-icons a:hover {
-    transform: scale(1.5);
+    transform: scale(1.6);
 }
 
 .home img {
@@ -189,8 +205,203 @@ section {
     object-fit: cover;
 }
 
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*========== About ==========*/
+
+.about {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(/img/banner-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #ebebeb;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+
+    font-size: 6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 90px;
+}
+
+.about-content p {
+    font-size: 20px;
+    color: #ebebeb;
+    margin-bottom: 60px;
+    padding: 0 100px;
+}
+
+
+
+/*
+.about {
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about .content-about-section {
+    z-index: 888;
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.title-about {
+    padding: 80px 0;
+}
+
+.title-about h1 {
+    font-size: 6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 90px;
+}
+
+.bg-about {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 30px;
+}
+
+.container-about {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-img {
+    width: 50%;
+    text-align: left;
+}
+
+.about-img img {
+    width: 500px;
+    height: auto;
+    margin-left: -50px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-txt {
+    width: 50%;
+    text-align: justify;
+    word-spacing: 2px;
+}
+
+.about-txt h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.about-txt p {
+    margin-bottom: 100px;
+    font-size: 1.2em;
+    word-spacing: 2px;
+    text-align: justify;
+}
+
+.btn-about-1 {
+    background: #2b2b2b;
+    padding: 15px 35px;
+    color: #C6E724;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.about a:hover {
+    background: #C6E724;
+    color: #2b2b2b;
+}
+*/
+
+/*========== Services ==========*/
+
+.services {
+    display: flex;
+    padding: 0 0;
+}
+
+.services-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+}
+
+.services-content {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    object-fit: cover;
+}
+
+.services-2 {
+    background-image: url(/img/srv-bbd.jpg);
+    
+}
+
+.services-3 {
+    background-image: url(/img/srv-fd.jpg);
+}
+
+.services-4 {
+    background-image: url(/img/srv-dj.jpg);
+}
+
+.services h2 {
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.services p {
+    font-size: 20px;
+    margin: 25px 0 45px 0;
+    text-align: justify;
+}
+
 /*========== Dimentions ==========*/
-@media (max-width: 1050px) {
+@media (max-width: 1300px) {
     header .nav-menu {
         padding: 12px 20px;
     }

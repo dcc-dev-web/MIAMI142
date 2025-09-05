@@ -45,6 +45,17 @@ img {
 }
 
 /*=============== CARD ===============*/
+
+.cards {
+    position: relative;
+    background-image: url('/img/bg-limones.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-block: 5rem;
+}
+
 .container {
     display: grid;
     place-items: center;
@@ -67,6 +78,7 @@ img {
 
 .card__container .card__article .card__data .card__button {
     text-decoration: none;
+    pointer-events: none;
 }
 
 .card__article {
@@ -75,7 +87,7 @@ img {
 }
 
 .card__img {
-    width: 328px;
+    width: 400px;
     border-radius: 1.5rem;
 }
 
@@ -211,11 +223,11 @@ img {
     }
 
     .card__img {
-        width: 348px;
+        width: 400px;
     }
 
     .card__data {
-        width: 316px;
+        width: 350px;
         padding-inline: 2.5rem;
     }
 }
